@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Fill Information: </h1>
+    <!---->
+    <form data-th-action="@{/contact}" data-th-object="${contact}"method="POST">
+        
+        <p>
+            Name:
+            <input type="text" data-th-field="*{name}" >
+        </p><br>
+
+        <p>
+            Email:
+            <input type="text" data-th-field="*{email}" >
+        </p><br>
+
+        <p>
+            Phone Number:
+            <input type="text" data-th-field="*{phoneNumber}" >
+        </p><br>
+
+        <p>
+
+            <input type="submit" value="Save">
+        </p><br>
+        <!--
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" data-th-field="{name}" ></td>
+
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="text"  data-th-field="{email}" placeholder="abcd@egf.com"></td>
+
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td><input type="tel"data-th-field="{phoneNumber}"></td>
+
+            </tr>
+            <tr>
+                <td><input type="submit" value="Save"></td>
+            </tr>
+        </table>
+        -->
+        
+
+
+    </form>
+</body>
+</html>
