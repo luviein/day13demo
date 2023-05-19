@@ -25,12 +25,29 @@
             <span class ="error" data-th-if="${#fields.hasErrors('email')}" data-th-errors = "*{email}" style="color:red"></span>
         </p><br>
 
+
         <p>
             Phone Number:
             <input type="tel" data-th-field="*{phoneNumber}" required>
             <br>
             <span class ="error" data-th-if="${#fields.hasErrors('phoneNumber')}" data-th-errors = "*{phoneNumber}" style="color:red"></span>
         </p><br>
+
+
+        <p>
+            Date of Birth:
+            <input type="date" data-th-field="*{dateOfBirth}" required>
+            <br>
+            <span class ="error" data-th-if="${#fields.hasErrors('age')}" data-th-errors = "*{age}" style="color:red"></span>
+        </p>
+        <br>
+      
+
+
+
+
+
+
 
         <p>
 
